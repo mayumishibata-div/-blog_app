@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+    before_action :set_blog, only: [:edti, :show]
     
     def index
         @blogs = Blog.all
@@ -19,7 +20,7 @@ class BlogsController < ApplicationController
     end
     
     def edit
-        @blog = Blog.find(params[:id])
+        # @blog = Blog.find(params[:id])
     end 
     
     def update
@@ -29,7 +30,7 @@ class BlogsController < ApplicationController
     end 
     
     def show
-        @blog = Blog.find(params[:id])
+        # @blog = Blog.find(params[:id])
     end 
     
     private
@@ -40,4 +41,7 @@ class BlogsController < ApplicationController
     def move_to_index
         redirect_to action: :index
     end 
+    
+    def set_blog
+        @blog = Blog.find(params[:id])
 end
