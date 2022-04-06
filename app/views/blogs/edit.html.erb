@@ -1,0 +1,4 @@
+<%= form_with(model: @blog, local: true) do |form| %>
+    <%= form.text_area :text, placeholder: "blog", row: "10" %>
+    <%= form.submit "送信" %>
+<% end %>
