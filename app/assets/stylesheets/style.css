@@ -15,8 +15,24 @@
     background-color: pink ;
 }
 
-p{
-    height: 60px ;
-    width: 200px ;
+.blog-contener{
+    height: 100px ;
+    width: 500px ;
     background-color: lightgray ;
+}
+
+.button-contener{
+ 
+}
+
+.post-button{
+    background-color: pink ;
+    height: 40px ;
+    width: 40px ;
+    display: flex ;
+    list-style: none;
+}
+
+.button-parts{
+    margin: 10px ;
 }
