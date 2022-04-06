@@ -26,7 +26,10 @@ class BlogsController < ApplicationController
         blog = Blog.find(params[:id])
         blog.update(blog_params)
         redirect_to action: :index
-        
+    end 
+    
+    def show
+        @blog = Blog.find(params[:id])
     end 
     
     private
