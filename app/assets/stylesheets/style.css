@@ -1,0 +1,22 @@
+.header {
+    height: 60px ;
+    width: 100vw ;
+}
+.header-bar{
+    height: 100% ;
+    width: 100% ;
+    background-color: yellow ;
+    color: gray ;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.contents{
+    background-color: pink ;
+}
+
+p{
+    height: 60px ;
+    width: 200px ;
+    background-color: lightgray ;
+}
