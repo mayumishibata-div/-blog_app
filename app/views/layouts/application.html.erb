@@ -13,8 +13,19 @@
     <header class="header">
       <div class="header-bar">
         <h1 class="hedding"><a href="/blogs">Blog</a></h1>
-        <div class="hedding-post">
-          <a class="post" href="/blogs/new">new</a>
+        <% if user_signed_in? %>
+          <div class="hedding-in-post">
+            <%= link_to 'SignOut', destroy_user_session_path, method: :delete %>
+            <%= link_to 'New', new_blog_path, class:"post" %>
+          </div>
+        <% else %>
+          <div class="hedding-out-post">
+            <%= link_to 'SignUp', new_user_registration_path, class: "post" %>
+            <%= link_to 'SignIn', new_user_session_path, class: "post" %>
+          </div>
+        <% end %>
+          
+        
         </div>
       </div>
     </header>

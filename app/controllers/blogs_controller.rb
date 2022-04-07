@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
     before_action :set_blog, only: [:edti, :show]
-    
+    before_action :move_to_index, except: [:index, :show]
     def index
         @blogs = Blog.all
     end 
@@ -20,7 +20,7 @@ class BlogsController < ApplicationController
     end
     
     def edit
-        # @blog = Blog.find(params[:id])
+        @blog = Blog.find(params[:id])
     end 
     
     def update
@@ -44,4 +44,11 @@ class BlogsController < ApplicationController
     
     def set_blog
         @blog = Blog.find(params[:id])
+    end
+    
+    def move_to_index
+        unless user_signed_in?
+            redirect_to action: :index
+        end 
+    end 
 end
