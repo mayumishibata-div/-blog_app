@@ -34,12 +34,9 @@ class BlogsController < ApplicationController
     end 
     
     private
+    
     def blog_params
         params.require(:blog).permit(:text)
-    end 
-    
-    def move_to_index
-        redirect_to action: :index
     end 
     
     def set_blog
