@@ -1,4 +1,18 @@
-<%= form_with(model: @blog, local: true) do |form| %>
-    <%=form.text_field :text, placeholder: "MESSAGE" %>
-    <%=form.submit "送信" %>
-<% end %>
+<div class = "text-contents" >
+    <div class = "blog-content" >
+         <%= form_with(model: @blog, local: true) do |form| %>
+            <div class = "text-area">
+                <%= form.text_area :text, row: "30" %>
+            </div>
+        <div class = "button-contener">
+            <ul class="post-button">
+                <li class ="button-parts">
+                    <%=form.submit "送信", class:"submit-btn"%>
+                </li>
+                
+            </ul>
+        </div>
+        <% end %>
+        </div>
+    </div>
+</div>

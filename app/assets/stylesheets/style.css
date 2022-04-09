@@ -67,7 +67,7 @@ li{
 
 .button-parts {
     width:100px;
-    border: 1px solid #6b8e23;
+    /*border: 1px solid #6b8e23;*/
     padding: 15px ;
     background-color: #6b8e23 ;
     font-size: 20px;
@@ -133,5 +133,6 @@ textarea {
     background-color: #6b8e23 ;
     color:#FFFFFF;
     font-size: 20px;
-    
+    border:none ;
+    outline:none 
 }
