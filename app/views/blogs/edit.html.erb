@@ -1,4 +1,20 @@
-<%= form_with(model: @blog, local: true) do |form| %>
-    <%= form.text_area :text, placeholder: "本文", row: "10" %>
-    <%= form.submit "送信" %>
-<% end %>
+<div class = "text-contents" >
+    <div class = "blog-content" >
+         <%= form_with(model: @blog, local: true) do |form| %>
+            <div class = "text-area">
+                <%= form.text_area :text, row: "30" %>
+            </div>
+        <div class = "button-contener">
+            <ul class="post-button">
+                <li class ="button-parts">
+                    <%=form.submit "EDIT", class:"submit-btn"%>
+                </li>
+                <li class ="button-parts">
+                    <%= link_to 'DELETE', blog_path(@blog.id), method: :delete %>
+                </li>
+            </ul>
+        </div>
+        <% end %>
+        </div>
+    </div>
+</div>
