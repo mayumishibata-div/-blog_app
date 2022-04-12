@@ -34,7 +34,11 @@ class BlogsController < ApplicationController
         # @blog = Blog.find(params[:id])
     end 
     
-    def 
+    def destroy
+        blog = Blog.find(params[:id])
+        blog.destroy
+        redirect_to action: :index
+    end 
     
     private
     
