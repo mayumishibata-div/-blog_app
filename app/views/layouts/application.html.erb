@@ -22,6 +22,9 @@
           <%= link_to 'SignOut', destroy_user_session_path, method: :delete, class:"hedding-post" %>
           <%= link_to 'New', new_blog_path, class:"hedding-post" %>
         <% else %>
+        <div class="header-note">
+          <p>※投稿するにはログインが必要です</p>
+        </div>
         <div class="hedding-in-post">
           <%= link_to 'SignUp', new_user_registration_path, class: "hedding-post" %>
           <%= link_to 'Log In', new_user_session_path, class: "hedding-post" %>

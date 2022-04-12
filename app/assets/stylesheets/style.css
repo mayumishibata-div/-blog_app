@@ -15,6 +15,11 @@
     margin:0 auto;
 }
 
+.header-note {
+    font-size: 22px ;
+    color: #db7093;
+}
+
 .hedding-in-post {
     border: 1px solid #6b8e23;
     padding: 20px ;
@@ -134,5 +139,5 @@ textarea {
     color:#FFFFFF;
     font-size: 20px;
     border:none ;
-    outline:none 
+    outline:none ;
 }
