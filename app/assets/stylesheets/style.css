@@ -53,6 +53,8 @@
     width: 60% ;
     margin: 0 auto ;
     margin-top: 20px ;
+    border: none ;
+    outline: none ;
 }
 
 .blog-contener {
@@ -122,9 +124,9 @@ input {
 }
 
 .btn:hover {
-  box-shadow    : none;        /* カーソル時の影消去 */
-  color         : #6b8e23 ;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
+  box-shadow: none;
+  color: #6b8e23 ; 
+  background: #ffffff; 
 }
 
 textarea {
