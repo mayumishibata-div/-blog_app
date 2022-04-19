@@ -7,7 +7,7 @@
         <div class = "button-contener">
             <ul class="post-button">
                 <li class ="button-parts">
-                    <%= link_to '⬅️BACK', edit_blog_path(@blog.id), method: :get %>
+                    <%= link_to '⬅️BACK', root_path(@blog.id), method: :get %>
                 </li>
                 <li class ="button-parts">
                     <%= link_to 'EDIT', edit_blog_path(@blog.id), method: :get %>

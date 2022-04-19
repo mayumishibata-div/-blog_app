@@ -18,9 +18,17 @@
                     <li class ="button-parts">
                         <%= link_to 'DELETE', blog_path(blog.id), method: :delete, class: "alert" %>
                         <!--<a class = "hedding-post" href="/blogs">DELETE</a>-->
-                        
                     </li>
                 </ul>
+                    <div id="dialog">
+                        <p>本当に削除してもいいですか？</p>
+                        <button id="yes">はい</button>
+                        <button id="no">いいえ</button>
+                        <button id="cancel">キャンセル</button>
+                    </div>
+                     
+                    <!--<button id="btn">ボタン</button>-->
+                        
             </div>
         </div>
     <% end %>

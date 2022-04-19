@@ -16,7 +16,7 @@
   <header>
     <div class = "header">
       <div class = "header-bar">
-        <%= link_to 'Blog', root_path: :get, class:"hedding-blog" %>
+        <%= link_to 'Blog', root_path,method: :get, class:"hedding-blog" %>
       </div>
       <% if user_signed_in? %>
       <!--</div>-->
